@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "BAC",
+  "name": "Blood Alcohol Counter",
   "icons": [
     {
       "src": "favicon.ico",

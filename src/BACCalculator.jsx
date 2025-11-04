@@ -1,4 +1,3 @@
-// src/BACCalculator.jsx
 import React, { useState } from "react";
 
 const BACCalculator = () => {
@@ -9,6 +8,7 @@ const BACCalculator = () => {
   const [gender, setGender] = useState("male");
   const [drinkVolume, setDrinkVolume] = useState(""); // volume in ml
   const [response, setResponse] = useState(null); // to show backend response
+  const config = require('./config.json')
 
   const handleCalculate = async () => {
     if (!weight || !drinks || !alcoholPercent || !hours || !drinkVolume) {
@@ -26,8 +26,7 @@ const BACCalculator = () => {
     };
 
     try {
-      // Replace "http://your-backend-domain/bac" with your backend endpoint
-      const res = await fetch("http://your-backend-domain/bac", {
+      const res = await fetch(`${config.url}` , {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
