@@ -1,13 +1,123 @@
+/* ---- GLOBAL STYLING ---- */
 body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #e2e8f0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ---- CALCULATOR CONTAINER ---- */
+div[style*="maxWidth: 400px"] {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 18px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  padding: 2rem !important;
+  max-width: 420px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+div[style*="maxWidth: 400px"]:hover {
+  transform: translateY(-3px);
+  border-color: rgba(96, 165, 250, 0.4);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+/* ---- TITLE ---- */
+div[style*="maxWidth: 400px"] h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  color: #f8fafc;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+/* ---- LABELS ---- */
+div[style*="maxWidth: 400px"] label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #cbd5e1;
+}
+
+/* ---- INPUTS & SELECTS ---- */
+div[style*="maxWidth: 400px"] input,
+div[style*="maxWidth: 400px"] select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background-color: rgba(30, 41, 59, 0.9);
+  color: #f8fafc;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+div[style*="maxWidth: 400px"] input::placeholder {
+  color: #94a3b8;
+}
+
+div[style*="maxWidth: 400px"] input:focus,
+div[style*="maxWidth: 400px"] select:focus {
+  border-color: #60a5fa;
+  background-color: rgba(15, 23, 42, 0.95);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5), inset 0 0 8px rgba(59, 130, 246, 0.3);
+  transform: scale(1.01);
+}
+
+/* ---- BUTTON ---- */
+div[style*="maxWidth: 400px"] button {
+  background: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa);
+  color: #ffffff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  letter-spacing: 0.4px;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+}
+
+div[style*="maxWidth: 400px"] button:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb, #3b82f6);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+  transform: translateY(-2px);
+}
+
+div[style*="maxWidth: 400px"] button:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+}
+
+/* ---- RESPONSE SECTION ---- */
+div[style*="maxWidth: 400px"] pre {
+  background-color: rgba(15, 23, 42, 0.7);
+  padding: 1rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  margin-top: 1rem;
+  border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+div[style*="maxWidth: 400px"] h3 {
+  margin-bottom: 0.5rem;
+  color: #f8fafc;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
 }
