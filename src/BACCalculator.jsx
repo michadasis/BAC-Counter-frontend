@@ -76,7 +76,7 @@ const BACCalculator = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-500/20 rounded-full mb-4">
             <Wine className="w-8 h-8 text-blue-400" />
           </div>
-          <h1 className="text-3xl font-bold text-white mb-2">BAC Calculator</h1>
+          <h1 className="text-3xl font-bold text-white mb-2">Blood Alcohol Calculator</h1>
           <p className="text-slate-400">Estimate your blood alcohol content</p>
         </div>
 
@@ -181,7 +181,7 @@ const BACCalculator = () => {
             disabled={loading}
             className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-4 rounded-xl shadow-lg shadow-blue-500/30 transition-all hover:shadow-xl hover:shadow-blue-500/40 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {loading ? "Calculating..." : "Calculate BAC"}
+            {loading ? "Calculating..." : "Calculate"}
           </button>
 
           {showResult && response && response.bac !== null && response.bac !== undefined && (
