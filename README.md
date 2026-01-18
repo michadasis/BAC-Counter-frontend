@@ -4,26 +4,16 @@
 [![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-A modern, responsive React application for calculating Blood Alcohol Content (BAC). Features a beautiful gradient UI with real-time calculations powered by a FastAPI backend.
-
-
-## Features
-
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Real-time Calculation**: Instant BAC estimates using the Widmark formula
-- **Status Indicators**: BAC levels (Sober, Slight Impairment, Impaired, Legally Intoxicated)
-- **API Integration**: Connects to FastAPI backend for accurate calculations
-
 ## Built With
 
-- **React** - Frontend framework
-- **Tailwind CSS** - Utility-first CSS framework
-- **Lucide React** - Beautiful icon library
-- **FastAPI** - Backend API (separate repository)
+- **React**
+- **Tailwind CSS**
+- **Lucide React**
+- **FastAPI**
 
 ## How It Works
 
-The calculator uses the following inputs to estimate BAC:
+The calculator uses the following inputs to estimate the blood alcohol level:
 
 - **Gender** - Male or Female (affects distribution ratio)
 - **Weight (kg)** - Body weight for calculation
@@ -43,7 +33,7 @@ The frontend calculates grams of alcohol consumed and sends a payload to the bac
 }
 ```
 
-The backend processes this data using the Widmark formula and returns the estimated BAC.
+The backend processes this data using the Widmark formula and returns the estimated blood alcohol level.
 
 ## BAC Interpretation
 
@@ -60,12 +50,10 @@ The backend processes this data using the Widmark formula and returns the estima
 
 ## Authors
 
-- **Apostolos Chalis (Backend)** - [GitHub Profile](https://github.com/TolisSth)
 - **Ioannis Michadasis (Frontend)** - [GitHub Profile](https://github.com/michadasis)
+- **Apostolos Chalis (Backend)** - [GitHub Profile](https://github.com/TolisSth)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ---
-
-**Drink responsibly. Never drink and drive.**

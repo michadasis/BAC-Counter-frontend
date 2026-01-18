@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BACCalculator from "./BACCalculator";
+import BACCalculator from "./components/BACCalculator/BACCalculator";
 
 function App() {
   return (
