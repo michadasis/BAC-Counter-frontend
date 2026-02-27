@@ -4,6 +4,7 @@ import GenderSelector from "./GenderSelector";
 import InputField from "./InputField";
 import ResultDisplay from "./ResultDisplay";
 import Disclaimer from "./Disclaimer";
+import Footer from "./footer";
 import Button from "../ui/Button";
 import { calculateAlcoholGrams, validateInputs } from "../../utils/bacCalculations";
 import { getBACStatus } from "../../utils/bacStatus";
@@ -116,6 +117,7 @@ const BACCalculator = () => {
         </div>
 
         <Disclaimer />
+        <Footer />
       </div>
     </div>
   );
