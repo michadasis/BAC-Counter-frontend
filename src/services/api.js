@@ -1,7 +1,5 @@
-import config from '../config.json';
-
 export const calculateBAC = async (payload) => {
-  const response = await fetch(`${config.url}/bac`, {
+  const response = await fetch(`${process.env.BACKEND_URL}/bac`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
