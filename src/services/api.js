@@ -1,5 +1,5 @@
 export const calculateBAC = async (payload) => {
-  const response = await fetch(`${process.env.BACKEND_URL}/bac`, {
+  const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/bac`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
