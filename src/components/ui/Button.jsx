@@ -5,7 +5,7 @@ const Button = ({ onClick, disabled, loading, children, className = "" }) => {
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-4 rounded-xl shadow-lg shadow-blue-500/30 transition-all hover:shadow-xl hover:shadow-blue-500/40 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
+      className={`w-full font-semibold py-4 rounded-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
     >
       {loading ? "Calculating..." : children}
     </button>
